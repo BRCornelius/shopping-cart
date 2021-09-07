@@ -1,0 +1,8 @@
+.banner-container {
+    background-color: aqua;
+    display: inline-flex;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 1rem;
+    width: -webkit-fill-available;
+}
