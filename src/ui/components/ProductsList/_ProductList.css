@@ -1,0 +1,19 @@
+.listing-container {
+    display: block;
+    width: 100%;
+}
+
+.name-and-pricing {
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    width: -webkit-fill-available;
+}
+
+.name-and-vendor {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}

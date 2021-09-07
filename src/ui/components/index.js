@@ -1,2 +1,2 @@
 export * from './BannerComponent/BannerComponent.jsx'
-export * from './ProductsList/ProductListContainer.jsx'
+export * from './ProductsList/ProductList.jsx'

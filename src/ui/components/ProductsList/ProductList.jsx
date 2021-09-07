@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-export const ProductListContainer = () => {
+import { ProductListing } from './ProductListing.jsx';
+
+export const ProductList = () => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -24,15 +26,7 @@ export const ProductListContainer = () => {
     return <div>Loading...</div>;
   } else {
     return (<>
-      {items.map(item => <p>{item.name}</p>)}
-    </>
-      // <ul>
-      //   {items.map(item => (
-      //     <li key={item.id}>
-      //       {item.name} {item.price}
-      //     </li>
-      //   ))}
-      // </ul>
-    );
+      {items.map(item => <ProductListing item={item} />)}
+    </>);
   }
 }
