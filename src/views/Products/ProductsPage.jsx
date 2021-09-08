@@ -1,8 +1,9 @@
 import React from 'react';
 import { ProductList } from '../../ui/components';
 
-export const ProductsPage = () => {
+export const ProductsPage = props => {
+  const {updateCart} = props;
   return <div>
-    <ProductList />
+    <ProductList updateCart={updateCart}/>
   </div>
 }
