@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BannerComponent } from './ui/components';
-import { ProductsPage } from './views/Products/ProductsPage';
+import { CartPage, ProductsPage } from './views';
 
 function App() {
   const [isCart, setIsCart] = useState(false);
@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <BannerComponent clickFunction={clickFunction} rte={isCart}/>
       {!isCart && <ProductsPage />}
+      {!isCart && <CartPage />}
     </div>
   );
 }
