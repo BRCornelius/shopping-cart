@@ -1,0 +1,7 @@
+.table-container {
+    width: -webkit-fill-available;
+}
+
+.column-first {
+    display: flex;
+}
