@@ -4,7 +4,6 @@ import axios from 'axios';
 import { ProductListing } from './ProductListing.jsx';
 
 export const ProductList = props => {
-  const {updateCart} = props;
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -27,7 +26,7 @@ export const ProductList = props => {
     return <div>Loading...</div>;
   } else {
     return (<>
-      {items.map(item => <ProductListing item={item} updateCart={updateCart}/>)}
+      {items.map(item => <ProductListing key={item.id} item={item} />)}
     </>);
   }
 }

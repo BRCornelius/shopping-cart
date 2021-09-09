@@ -1,1 +1,1 @@
-export { getProducts } from './apiUtils.js';
+export { getProducts } from './cartUtils.js';
